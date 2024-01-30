@@ -51,10 +51,10 @@ function findFile(path, files) {
 function validatePath(path) {
     // we don't want to allow paths like ../../file.md
     if (path.includes('..')) {
-        return { valid: false, message: 'Path cannot contain .. characters' };
+        return false;
     }
 
-    return { valid: true };
+    return true;
 }
 
 let files = getFileTree(ROOT_PATH, []);
@@ -90,7 +90,7 @@ router.get('/*', async (req, res) => {
         return;
     }
 
-    const { valid, message } = validatePath(path);
+    const valid = validatePath(path);
 
     if (!valid) {
         console.log(path);
