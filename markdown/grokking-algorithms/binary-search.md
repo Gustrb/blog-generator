@@ -52,7 +52,7 @@ uint8_t binary_search(uint8_t value_to_search, uint8_t *list, uint8_t lowerbound
         uint8_t middle = (lowerbound + upperbound) / 2;
         uint8_t guess = list[middle];
 
-        if (value_to_search == guess) return true;
+        if (value_to_search == guess) return 1;
 
         if (guess > value_to_search)
         {
@@ -64,7 +64,7 @@ uint8_t binary_search(uint8_t value_to_search, uint8_t *list, uint8_t lowerbound
         }
     }
 
-    return false;
+    return 0;
 }
 
 ```
@@ -87,7 +87,7 @@ uint8_t binary_search(uint8_t value_to_search, uint8_t *list, uint8_t lowerbound
         uint8_t middle = lowerbound + (uperbound - lowerbound) / 2;
         uint8_t guess = list[middle];
 
-        if (value_to_search == guess) return true;
+        if (value_to_search == guess) return 1;
 
         if (guess > value_to_search)
         {
@@ -98,8 +98,8 @@ uint8_t binary_search(uint8_t value_to_search, uint8_t *list, uint8_t lowerbound
             lowerbound = middle + 1;
         }
     }
-
-    return false;
+    
+    return 0;
 }
 ```
 
