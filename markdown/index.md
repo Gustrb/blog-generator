@@ -14,4 +14,4 @@ Here I will index every single one of my notes, so I can easily find them.
 
 ## Grokking Algorithms
 
-[Binary Search](http://localhost:3000/grokking-algorithms/binary-search)
+[Binary Search](http://localhost:3000/algorithms/binary-search)
