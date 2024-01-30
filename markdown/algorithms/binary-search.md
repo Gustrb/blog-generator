@@ -10,7 +10,7 @@ How would you do about figuring out what number is player A thinking about? [In 
 ## The bad approach
 
 I guess, the most intuitive way to reason about this problem would be going one number at a time, so you would guess, 1, 2, 3, 4, ...
-Until you find the number Player A is thinking about. This is called [Linear search](http://localhost:3000/concepts/linear-search).
+Until you find the number Player A is thinking about. This is called [Linear search](http://localhost:3000/algorithms/linear-search).
 In the worst case scenario, how many attemps would be necessary to figure out exactly which number is Player A thinking about?
 Let's say in this case, Player A picked, the number 1000, and the accorded range of numbers is from 0 to 100 (inclusive).
 So in this case, Player B, would guess incorrectly 100 times, (0 -> 99) before guessing the correct number (100).
@@ -109,3 +109,5 @@ Proof that (l + r) / 2 is the same as l + (r - l) / 2:
 
 
 [Back to home](http://localhost:3000/index)
+
+All notes were taken by [Gustavo Reis Bauer](https://github.com/Gustrb), aka Gustrb, january/2024.
