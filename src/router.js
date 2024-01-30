@@ -72,8 +72,17 @@ function putInCache(path, value) {
     }, OPTIONS.cacheTTL);
 }
 
+function redirectToIndex(res) {
+    res.redirect('/index');
+}
+
 router.get('/*', async (req, res) => {
     const { path } = req;
+
+    if (path === '/') {
+        redirectToIndex(res);
+        return;
+    }
 
     if (cache[path]) {
         res.set('Content-Type', 'text/html');
@@ -84,8 +93,8 @@ router.get('/*', async (req, res) => {
     const { valid, message } = validatePath(path);
 
     if (!valid) {
-        console.log(path)
-        res.status(400).send(message);
+        console.log(path);
+        redirectToIndex(res);
         return;
     }
 
@@ -93,7 +102,7 @@ router.get('/*', async (req, res) => {
 
     if (!file) {
         console.log(path)
-        res.status(404).send('Not found');
+        redirectToIndex(res);
         return;
     }
 
