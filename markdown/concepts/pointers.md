@@ -208,8 +208,8 @@ Whenever we declare a pointer with multiple elements such as `const uint8_t *mes
 Does it make sense to be like this? Yea, kind of. There are two ways to actually do that, we could either null terminate the string thus wasting one byte, or we could pack the pointer with a counter that indicates how big the string is, which seems far better right?
 But how big would this counter have to be? 1 byte, nah that would only allow strings from up to 255 elements, 2 bytes, still really small, probably the counter would need to have the same size as a pointer, which would waste a lot of memory.
 
-Here is an examplo of how to iterate over a string using pointer arithmetic:
-```
+Here is an exampl of how to iterate over a string using pointer arithmetic:
+```c
 #include <stdlib.h>
 
 size_t strlen(const char *buffer)
