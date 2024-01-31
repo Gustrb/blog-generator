@@ -42,7 +42,7 @@ This is called a [logarithmic](http://localhost:3000/math/logarithms) complexity
 I will implement the binary search in the C programming language, since there is a really interesting implementation detail that
 dynamically typed programming languages hide from you in the following implementation
 
-```
+```c
 #include <stdint.h>
 
 uint8_t binary_search(uint8_t value_to_search, uint8_t *list, uint8_t lowerbound, uint8_t upperbound)
@@ -77,7 +77,7 @@ So in the line were we would get the middle, we would add 255 and 127 and we wou
 
 Ok. But how do we fix this? There is a simple way we can change the calculation, that keeps the same result but does avoid the overflow issue, the code would be:
 
-```
+```c
 #include <stdint.h>
 
 uint8_t binary_search(uint8_t value_to_search, uint8_t *list, uint8_t lowerbound, uint8_t upperbound)

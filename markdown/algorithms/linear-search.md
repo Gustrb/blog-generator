@@ -22,7 +22,7 @@ Because of this limitation, we say that linear search has a complexity of *O(n)*
 
 The implementantion is pretty much the same in every single language, but let us implement it in C:
 
-```
+```c
 #include <stdint.h>
 
 uint8_t linear_search(uint8_t page_to_search_by, uint8_t *pages, uint_8 pagenumber)
