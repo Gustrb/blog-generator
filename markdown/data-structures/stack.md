@@ -64,4 +64,4 @@ The name of the error `stack overflow` might have caught your attention, the sta
 
 [Back to home](http://localhost:3000/index)
 
-All notes were taken by [Gustavo Reis Bauer](https://github.com/Gustrb), aka Gustrb, january/2024.
+All notes were taken by [Gustavo Reis Bauer](https://github.com/Gustrb), aka Gustrb, february/2024.
