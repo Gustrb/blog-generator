@@ -7,6 +7,10 @@ Here I will index every single one of my notes, so I can easily find them.
 [Binary Search](http://localhost:3000/algorithms/binary-search)
 [Linear Search](http://localhost:3000/algorithms/linear-search)
 
+### Sorting
+
+[Selection Sort](http://localhost:3000/algorithms/sorting/selection-sort)
+
 ## Basic concepts:
 
 [Big O Notation](http://localhost:3000/concepts/big-o)
