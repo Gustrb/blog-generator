@@ -15,6 +15,8 @@ Here I will index every single one of my notes, so I can easily find them.
 
 [Big O Notation](http://localhost:3000/concepts/big-o)
 [Cache Locality](http://localhost:3000/concepts/cache-locality)
+[Garbage Collection](http://localhost:3000/concepts/garbage-collection)
+[Heap Vs Stack Memory Allocation](http://localhost:3000/concepts/heap-vs-stack-memory)
 [Integer Overflow](http://localhost:3000/concepts/integer-overflow)
 [Pointers](http://localhost:3000/concepts/pointers)
 
