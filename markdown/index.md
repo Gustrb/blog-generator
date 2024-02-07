@@ -5,6 +5,7 @@ Here I will index every single one of my notes, so I can easily find them.
 ## Algorithms
 
 [Binary Search](http://localhost:3000/algorithms/binary-search)
+[Hanoi Towers](http://localhost:3000/algorithms/hanoi-towers)
 [Linear Search](http://localhost:3000/algorithms/linear-search)
 
 ### Sorting
