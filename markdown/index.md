@@ -24,6 +24,8 @@ Here I will index every single one of my notes, so I can easily find them.
 
 ## Data Structures:
 
+[Linked List](http://localhost:3000/data-structures/linked-list)
+[Queue](http://localhost:3000/data-structures/queue)
 [Stack](http://localhost:3000/data-structures/stack)
 
 ## Math
