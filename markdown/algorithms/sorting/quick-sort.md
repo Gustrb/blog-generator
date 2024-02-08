@@ -132,6 +132,8 @@ void _quick_sort(uint32_t *arr, size_t low, size_t high)
 So the main idea of the algorithm is rather simple, break the array partition the list into two parts, one in which all the elements are smaller than the pivot and one in which all the elements are larger than the pivot.
 And then, recursively apply this algorithm to the parts themselves, until the part has no elements, in this case, we can be sure it is properly sorted
 
+There's an important nuance on picking a pivot in the quick sort algorithm, if we choose bad pivots, we are going to end up with a terrible complexity, because every time we split the array into two arrays, we end up with small arrays, in this case, we are going to have n recursive calls and we will have to walk n elements, therefore quick sort has a worst case scenario of O(n*n), which is awfull, so we ned to be careful when picking a pivot, one good approach is to pick a random number, by doing so, we are pretty sure going to get the middle case, which is O(n * log n), log n since in the average case, we will split the array into two arrays that have half the elements of the initial array, and since we have to go through all the elements, there is a factor of n
+
 [Back to home](http://localhost:3000/index)
 
 All notes were taken by [Gustavo Reis Bauer](https://github.com/Gustrb), aka Gustrb, february/2024.
