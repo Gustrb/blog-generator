@@ -10,6 +10,7 @@ Here I will index every single one of my notes, so I can easily find them.
 
 ### Sorting
 
+[Quick Sort](http://localhost:3000/algorithms/sorting/quick-sort)
 [Selection Sort](http://localhost:3000/algorithms/sorting/selection-sort)
 
 ## Basic Concepts:

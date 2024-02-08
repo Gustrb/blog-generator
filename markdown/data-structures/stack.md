@@ -60,6 +60,8 @@ So you can see how easy it is to implement those operations, even on such a bare
 
 To insert a new element onto the stack, we bump the pointer, to accomodate the element we want to insert and then we store it there, and to pop it, we do the opposite, we get the value that is being currently pointed by the `stackptr` and then decrement it, so we basically 'forget'about the value that was previously there.
 
+So if we take a detour to look at the operations complexity, we can see, that peeking, pushing and poping a stack all have complexity O(1), since all we are doing is reading/writing to an array and updating a pointer
+
 The name of the error `stack overflow` might have caught your attention, the stack overflow is a common error name whenever we want to push a new element onto a stack but the stack is not large enough to store it, it is also the name of the famous programming forums out there, see: [Stack overflow](https://stackoverflow.com).
 
 [Back to home](http://localhost:3000/index)
